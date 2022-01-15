@@ -5,7 +5,7 @@ let albumUrl = 'https://jsonplaceholder.typicode.com/albums'
 
 async function getAlbums() {
   let albums = await fetch(albumUrl);
-  
+
    if (albums.ok) {
     return await albums.json();
    } else {
@@ -41,4 +41,3 @@ selectedAlbum.addEventListener('click', (event) =>  {
     event.preventDefault(); 
     getImages(event.target.id).then((imagesArr) => showImages(imagesArr));
 })
-
