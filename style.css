@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: 600px 1000px;
+    column-gap: 200px;
+}
+
+ul {
+    padding-left: 5px;
+    height: 700px;
+    overflow: scroll;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: yellow;
+}
+
+img {
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
