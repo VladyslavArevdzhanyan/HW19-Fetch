@@ -36,6 +36,7 @@ function showImages(imageArr) {
 }
 
 getAlbums().then((albumsArr) => showAlbums(albumsArr));
+getImages(1).then((imageArr) => showImages(imageArr));
 
 selectedAlbum.addEventListener('click', (event) =>  {
     event.preventDefault(); 
